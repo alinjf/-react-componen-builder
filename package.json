@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "@alinjf7/component-builder",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "react component that make you component with any dom that you want",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,9 +29,21 @@
     "webpack-dev-server": "^4.15.1",
     "workbox-webpack-plugin": "^7.0.0"
   },
-  "author": "",
+  "author": "alinjf",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinjf/-react-componen-builder.git"
+  },
   "dependencies": {
     "@types/react": "^18.2.21"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/alinjf/-react-componen-builder/issues"
+  },
+  "homepage": "https://github.com/alinjf/-react-componen-builder#readme",
+  "keywords": [
+    "react",
+    "component-builder"
+  ]
 }
