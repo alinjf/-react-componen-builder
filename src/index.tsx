@@ -26,4 +26,3 @@ const Component = (props: AllowedProps) => {
 };
 
 export default Component;
- 
