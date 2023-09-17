@@ -9,7 +9,7 @@ type Values<T> = T[keyof T];
 type ObtainHTMLProps<T extends Values<JSX.IntrinsicElements>> =
   T extends React.DetailedHTMLProps<infer Props, HTMLElement> ? Props : never;
 
-type AllowedProps = Values<{
+type AllowedProps = Values<{  
   [Tag in keyof JSX.IntrinsicElements]: {
     component: Tag;
   } & ObtainHTMLProps<JSX.IntrinsicElements[Tag]>;

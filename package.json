@@ -6,15 +6,25 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx cjs,esm --dts",
-    "lint": "tsc"
+    "lint": "tsc",
+    "release": "pnpm run build && changeset publish",
+    "test": "vitest --coverage"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "@testing-library/react": "^14.0.0",
+    "@vitest/coverage-v8": "^0.34.4",
+    "jsdom": "^22.1.0",
     "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
   },
   "dependencies": {
     "@types/react": "^18.2.21",
+    "@vitejs/plugin-react": "^4.0.4",
     "react": "^18.2.0"
   }
 }
